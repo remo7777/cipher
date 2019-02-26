@@ -13,3 +13,5 @@ echo "Ash successfully installed to /ash"
 # Move back
 chmod 700 /data/data/com.termux/files/usr/bin/ash
 cd "$current_location"
+# ash apm:install https://github.com/ash-shell/cipher.git
+ash apm:install https://github.com/ash-shell/cipher.git
