@@ -5,9 +5,10 @@ current_location="/data/data/com.termux/files/home"
 # clone
 apt-get install git -y
 git clone --recursive https://github.com/ash-shell/ash.git
-# Add to /data/data/com.termux/files/usr/bin:/data/data/com.termux/files/usr/bin/applets
+# Add to /data/data/com.termux/files/usr/bin/applets
 cd "$path_location"
 ln -s "/ash/ash" .
 echo "Ash successfully installed to /ash"
 # Move back
+chmod 700 /data/data/com.termux/files/usr/bin/ash
 cd "$current_location"
